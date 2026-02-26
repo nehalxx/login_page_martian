@@ -6,9 +6,14 @@ import FraudDistributionChart from './pie'
 
 const Sec1cont = () => {
   return (
-    <div className='px-7 py-3 h-[90vh] flex items-center '><Leftcont/>
+    <div className='px-7 py-3 h-[90vh] flex items-center '>
+    <Leftcont/>
+
     <Rightcont/>
     <FraudDistributionChart/>
+    <FraudAlert/>
+    
+    
     </div>
     
   )

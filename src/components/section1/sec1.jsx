@@ -7,7 +7,7 @@ const Sec1 = () => {
   return (
     <div className='h-screen w-full'><Navbar/>
     <Sec1cont/>
-    <FraudAlert/>
+  
 </div>
   )
 }
