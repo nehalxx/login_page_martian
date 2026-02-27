@@ -15,7 +15,7 @@ const Sec1cont = () => {
     <FraudDistributionChart/>
    
   
-    <FraudAlert/>
+   
 
     
     

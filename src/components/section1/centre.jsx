@@ -6,7 +6,8 @@ const KYCExceptionDashboard = () => {
     { id: 1, entity: "Money Laundering", type: "AML Red Flag", risk: "High", status: "New", assigned: "Sarah J.", daysOpen: 1 },
     { id: 2, entity: "Credit Card Fraud Detection ", type: "Expired ID", risk: "Medium", status: "Pending User", assigned: "Auto-System", daysOpen: 3 },
     { id: 3, entity: "KYC Manipulation Detection", type: "UBO Discrepancy", risk: "High", status: "In Review", assigned: "David K.", daysOpen: 5 },
-    { id:4, entity:"SaaS Supply Chain Attack", type:"", risk:"High",status:"pending",assigned:"Officer",daysOpen:"5d"}
+    { id:4, entity:"SaaS Supply Chain Attack", type:"", risk:"High",status:"pending",assigned:"Officer",daysOpen:"5d"},
+    {id:5,entity:"Quishing",type:"",risk:"medium",status:"pending", assigned:"Cyber crime dept",daysOpen:"3d"}
   ]);
 
   return (
@@ -87,7 +88,7 @@ const KYCExceptionDashboard = () => {
 };
 
 const StatCard = ({ label, count, color }) => (
-  <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 min-w-[120px]">
+  <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 min-w-30">
     <p className="text-xs text-slate-500 font-bold uppercase">{label}</p>
     <p className={`text-2xl font-black ${color}`}>{count}</p>
   </div>
