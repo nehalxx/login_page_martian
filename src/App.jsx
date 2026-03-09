@@ -1,11 +1,14 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './components/section1/login'
-import Navbar from './components/section1/navbar'
-import Sec1cont from './components/section1/sec1cont'
-import sec1 from './components/section1/sec1'
-import Sec1 from './components/section1/sec1'
-import Blank from './components/section1/blank'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './components/section1/login';
+import Navbar from './components/section1/navbar';
+import Sec1cont from './components/section1/sec1cont';
+import Sec1 from './components/section1/sec1'; // DELETE the 'sec1' (lowercase) line above this!
+import Blank from './components/section1/blank';
+import Home from './components/section1/home';
+
+import Set2 from './components/section1/set2';
+
 
 const App = () => {
   return (
@@ -22,7 +25,14 @@ const App = () => {
 
         {/* Blank page */}
         <Route path="/blank" element={<Blank />} />
+        <Route path="/home" element={<Home/>} />
+        
+        <Route path="/fset" element={<Set2/>}/>
+      
+        
       </Routes>
+      
+      
     </BrowserRouter>
   )
 }
